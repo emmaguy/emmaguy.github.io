@@ -8,7 +8,7 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <meta name="generator" content="Hugo 0.69.2" />
 
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr/amzrk2/favicons/favicon.ico" />
+<link rel="shortcut icon" href="favicon.ico" />
 
 
 <title>Tracking Android app metrics - Emma&#39;s Blog</title>
@@ -76,10 +76,10 @@
     </h4>
     <div id="post-meta">
         <span>
-    <time datetime="2018-07-07 13:09:07 &#43;0100 BST">2018-07-07</time> |
+    <time datetime="2018-07-07 13:09:07 &#43;0100 BST">7 Jul 2018</time> |
 </span>
 <span>
-    <span>422 words</span> |
+    <span>2 minute read</span> | 
 </span>
 <span>
     
@@ -99,7 +99,7 @@
 
 <p>When I joined <a href="https://www.monzo.com" target="_blank">Monzo</a> I was keen to keep a track of metrics that would help us keep a handle on the app&rsquo;s size and method count. I set up a shell script on our CI to upload the numbers to <a href="http://www.stathat.com/" target="_blank">StatHat</a> each time we merged a change to our <code>develop</code> branch. This was great in theory, but not visible enough to be actually useful - in fact, one of the stats stopped uploading properly some months ago and we didn&rsquo;t even notice.</p>
 <p>We recently started using <a href="http://danger.systems/ruby/" target="_blank">Danger</a> and I thought it would be a great opportunity to surface these numbers, so we could actually see the impact of each change being merged into the app.</p>
-<h2 id="step-1-upload-stats-when-merging-intodevelop">Step 1 - Upload stats when merging into develop</h2>
+<h2 id="step-1---upload-stats-when-merging-intodevelop">Step 1 - Upload stats when merging into develop</h2>
 <p>The <a href="http://www.stathat.com/manual/start" target="_blank">StatHat docs</a> are really helpful here, there are many ways to upload a stat so pick your favourite. I went with Ruby.</p>
 <p>Uploading the apk size is pretty simple once you&rsquo;ve found the right path to it.</p>
 <script type="application/javascript" src="https://gist.github.com/emmaguy/44c22781bef19fe75d5d135d5094be9d.js"></script>
@@ -110,7 +110,7 @@
 <p>How/where you run this script will depend on your setup - we use CircleCI.</p>
 <script type="application/javascript" src="https://gist.github.com/emmaguy/eb67f7b3b8d4b01a6a8880184b5efb59.js"></script>
 
-<h2 id="step-2-retrieve-stats-fromdevelop">Step 2 - Retrieve stats from develop</h2>
+<h2 id="step-2---retrieve-stats-fromdevelop">Step 2 - Retrieve stats from develop</h2>
 <p>Next up, we need to be able to retrieve the stats we&rsquo;ve uploaded to compare the latest develop against what we have locally. This was trickier, as you can only retrieve raw data points from StatHat, so we need to filter down all the points and get the most recently uploaded stat.</p>
 <script type="application/javascript" src="https://gist.github.com/emmaguy/2457a757f787c08d30b6c49c4a4830c4.js"></script>
 
@@ -137,8 +137,8 @@
     <h5>TOC</h5>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#step-1-upload-stats-when-merging-intodevelop">Step 1 - Upload stats when merging into develop</a></li>
-    <li><a href="#step-2-retrieve-stats-fromdevelop">Step 2 - Retrieve stats from develop</a></li>
+    <li><a href="#step-1---upload-stats-when-merging-intodevelop">Step 1 - Upload stats when merging into develop</a></li>
+    <li><a href="#step-2---retrieve-stats-fromdevelop">Step 2 - Retrieve stats from develop</a></li>
     <li><a href="#step-3---comment-on-pull-request-withchanges">Step 3 - Comment on pull request with changes</a></li>
   </ul>
 </nav>
@@ -148,6 +148,10 @@
     <h5>Pages</h5>
     <ul>
         
+        
+        <li>
+            <a href="/">Home</a>
+        </li>
         
     </ul>
 </div>
@@ -188,6 +192,14 @@
 <div id="widget-links">
     <h5>Links</h5>
     <ul>
+        
+        <li>
+            <a href="https://github.com/emmaguy" target="_blank"><span>GitHub</span></a>
+        </li>
+        
+        <li>
+            <a href="https://twitter.com/emmaguy" target="_blank"><span>Twitter</span></a>
+        </li>
         
     </ul>
 </div>
