@@ -21,7 +21,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://emmaguy.github.io/tags/" />
-
+<meta property="og:updated_time" content="2020-04-26T11:02:28+01:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tags"/>
@@ -72,7 +72,7 @@
 
 <div id="post">
     <h2 id="post-title">
-        <a href="https://emmaguy.github.io/posts/26-apr-2020/">Migrating away from Medium</a>
+        <a href="https://emmaguy.github.io/posts/2020-apr-26-hello-hugo/">Hello, Hugo</a>
     </h2>
     <div id="post-meta">
         <span>
@@ -83,7 +83,9 @@
 </span>
 <span>
     
-    <span>No tag</span>
+    
+    <a href="https://emmaguy.github.io//tags/meta/">meta</a>
+    
     
 </span>
     </div>
@@ -93,7 +95,186 @@ So, I&rsquo;ve finally sorted out my own blog - using Hugo &amp; GitHub Pages
 Farewell, Medium.
     </div>
     <div id="post-exlink">
-        <a href="https://emmaguy.github.io/posts/26-apr-2020/"><i class="fas fa-angle-right"></i>&nbsp;READ MORE&nbsp;<i class="fas fa-angle-left"></i></a>
+        <a href="https://emmaguy.github.io/posts/2020-apr-26-hello-hugo/"><i class="fas fa-angle-right"></i>&nbsp;READ MORE&nbsp;<i class="fas fa-angle-left"></i></a>
+    </div>
+</div>
+
+<div id="post">
+    <h2 id="post-title">
+        <a href="https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/">Android Modularisation Survey 2019 - the results!</a>
+    </h2>
+    <div id="post-meta">
+        <span>
+    <time datetime="2019-03-01 13:09:22 &#43;0100 &#43;0100">2019-03-01</time> |
+</span>
+<span>
+    <span>1825 words</span> |
+</span>
+<span>
+    
+    
+    <a href="https://emmaguy.github.io//tags/android/">android</a>
+    
+    <a href="https://emmaguy.github.io//tags/modularisation/">modularisation</a>
+    
+    
+</span>
+    </div>
+    <div class="markdown-body" id="post-summary">
+        A couple of weeks ago, I tweeted a survey to find out more about how Android developers were modularising their apps. It&rsquo;s a broad and complicated topic, with no clear standard approach or conventions to follow, so I was interested to learn more.
+Do you work on an android app that&#39;s split up into modules? If so, it would great if you could spend a few mins filling out this survey, gathering data on your approach - I&#39;ll publish the results so everyone in Android community can benefit!
+    </div>
+    <div id="post-exlink">
+        <a href="https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/"><i class="fas fa-angle-right"></i>&nbsp;READ MORE&nbsp;<i class="fas fa-angle-left"></i></a>
+    </div>
+</div>
+
+<div id="post">
+    <h2 id="post-title">
+        <a href="https://emmaguy.github.io/posts/2018-jul-7-tracking-android-app-metrics/">Tracking Android app metrics</a>
+    </h2>
+    <div id="post-meta">
+        <span>
+    <time datetime="2018-07-07 13:09:07 &#43;0100 BST">2018-07-07</time> |
+</span>
+<span>
+    <span>422 words</span> |
+</span>
+<span>
+    
+    
+    <a href="https://emmaguy.github.io//tags/android/">android</a>
+    
+    <a href="https://emmaguy.github.io//tags/apk-size/">apk size</a>
+    
+    
+</span>
+    </div>
+    <div class="markdown-body" id="post-summary">
+        When I joined Monzo I was keen to keep a track of metrics that would help us keep a handle on the app&rsquo;s size and method count. I set up a shell script on our CI to upload the numbers to StatHat each time we merged a change to our develop branch. This was great in theory, but not visible enough to be actually useful - in fact, one of the stats stopped uploading properly some months ago and we didn&rsquo;t even notice.
+    </div>
+    <div id="post-exlink">
+        <a href="https://emmaguy.github.io/posts/2018-jul-7-tracking-android-app-metrics/"><i class="fas fa-angle-right"></i>&nbsp;READ MORE&nbsp;<i class="fas fa-angle-left"></i></a>
+    </div>
+</div>
+
+<div id="post">
+    <h2 id="post-title">
+        <a href="https://emmaguy.github.io/posts/2017-dec-2-kotlin-non-null-exception/">Mysterious Kotlin &#39;parameter non-null exception&#39;</a>
+    </h2>
+    <div id="post-meta">
+        <span>
+    <time datetime="2017-12-02 13:08:43 &#43;0100 &#43;0100">2017-12-02</time> |
+</span>
+<span>
+    <span>117 words</span> |
+</span>
+<span>
+    
+    
+    <a href="https://emmaguy.github.io//tags/kotlin/">kotlin</a>
+    
+    
+</span>
+    </div>
+    <div class="markdown-body" id="post-summary">
+        This week I found myself confused by an exception when writing a simple extension method on Android&rsquo;s TextView.
+Consider the following extension method:
+fun TextView.doSomething() { } This is about as simple as it could get - it has no parameters and returns nothing. However, when I tried to use it, I found myself with the following exception:
+ Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.checkParameterIsNotNull, parameter $receiver
+But that&rsquo;s weird - it looks like there&rsquo;s a parameter called $receiver which is null… Except, I don&rsquo;t have a parameter at all!
+    </div>
+    <div id="post-exlink">
+        <a href="https://emmaguy.github.io/posts/2017-dec-2-kotlin-non-null-exception/"><i class="fas fa-angle-right"></i>&nbsp;READ MORE&nbsp;<i class="fas fa-angle-left"></i></a>
+    </div>
+</div>
+
+<div id="post">
+    <h2 id="post-title">
+        <a href="https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/">Creating a Custom Type Adapter for Moshi</a>
+    </h2>
+    <div id="post-meta">
+        <span>
+    <time datetime="2017-09-22 13:08:25 &#43;0100 BST">2017-09-22</time> |
+</span>
+<span>
+    <span>519 words</span> |
+</span>
+<span>
+    
+    
+    <a href="https://emmaguy.github.io//tags/kotlin/">kotlin</a>
+    
+    <a href="https://emmaguy.github.io//tags/moshi/">moshi</a>
+    
+    
+</span>
+    </div>
+    <div class="markdown-body" id="post-summary">
+        In building an app which guides a user through a process, stage by stage, we would probably use an enum to represent it.
+For example, consider a process which goes from NOT_STARTED, through IN_PROGRESS to one of either REJECTED or COMPLETED:
+ The logic for moving between these stages is transparent to the app, we show different screens based on which stage a user is in.
+But what if the mapping of stages isn&rsquo;t 1:1 on the client and the server?
+    </div>
+    <div id="post-exlink">
+        <a href="https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/"><i class="fas fa-angle-right"></i>&nbsp;READ MORE&nbsp;<i class="fas fa-angle-left"></i></a>
+    </div>
+</div>
+
+<div id="post">
+    <h2 id="post-title">
+        <a href="https://emmaguy.github.io/posts/2015-nov-29-dynamic-svg-colours/">Dynamically changing SVG colours on Android</a>
+    </h2>
+    <div id="post-meta">
+        <span>
+    <time datetime="2015-11-29 13:08:07 &#43;0100 &#43;0100">2015-11-29</time> |
+</span>
+<span>
+    <span>350 words</span> |
+</span>
+<span>
+    
+    
+    <a href="https://emmaguy.github.io//tags/android/">android</a>
+    
+    
+</span>
+    </div>
+    <div class="markdown-body" id="post-summary">
+        Recently, I needed to change the colour of part of a drawable - and I wanted to do it better than manually swapping out the whole image, or swapping in and out the changing part and overlaying this on top of a base image.
+I knew I wanted the assets to be vector based if at all possible - SVG support was added in Lollipop with the VectorDrawable class and have been a great addition.
+    </div>
+    <div id="post-exlink">
+        <a href="https://emmaguy.github.io/posts/2015-nov-29-dynamic-svg-colours/"><i class="fas fa-angle-right"></i>&nbsp;READ MORE&nbsp;<i class="fas fa-angle-left"></i></a>
+    </div>
+</div>
+
+<div id="post">
+    <h2 id="post-title">
+        <a href="https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/">Death to Ugly Android Screenshots</a>
+    </h2>
+    <div id="post-meta">
+        <span>
+    <time datetime="2015-10-11 13:07:00 &#43;0100 BST">2015-10-11</time> |
+</span>
+<span>
+    <span>1327 words</span> |
+</span>
+<span>
+    
+    
+    <a href="https://emmaguy.github.io//tags/android/">android</a>
+    
+    <a href="https://emmaguy.github.io//tags/open-source/">open source</a>
+    
+    
+</span>
+    </div>
+    <div class="markdown-body" id="post-summary">
+        Clean Status Bar is an app I created in September 2014 to try and make taking nice screenshots for the Google Play Store easy and fast. Ugly screenshots are a distraction from the app you&rsquo;re trying to show off, and have become somewhat of a pet peeve of mine. When I&rsquo;m looking at an app on the Play Store and wondering whether it&rsquo;s worth downloading or not, the first thing I look at is the screenshots.
+    </div>
+    <div id="post-exlink">
+        <a href="https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/"><i class="fas fa-angle-right"></i>&nbsp;READ MORE&nbsp;<i class="fas fa-angle-left"></i></a>
     </div>
 </div>
 
@@ -119,6 +300,34 @@ Farewell, Medium.
 <div id="widget-tags">
     <h5>Tags</h5>
     <div>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/android/">android</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/apk-size/">apk size</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/kotlin/">kotlin</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/meta/">meta</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/modularisation/">modularisation</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/moshi/">moshi</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/open-source/">open source</a>
+        </span>
         
     </div>
 </div>

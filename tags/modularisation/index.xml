@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>modularisation on Emma&#39;s Blog</title>
+    <link>https://emmaguy.github.io/tags/modularisation/</link>
+    <description>Recent content in modularisation on Emma&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 13:09:22 +0100</lastBuildDate>
+    
+	<atom:link href="https://emmaguy.github.io/tags/modularisation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Modularisation Survey 2019 - the results!</title>
+      <link>https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/</link>
+      <pubDate>Fri, 01 Mar 2019 13:09:22 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/</guid>
+      <description>A couple of weeks ago, I tweeted a survey to find out more about how Android developers were modularising their apps. It&amp;rsquo;s a broad and complicated topic, with no clear standard approach or conventions to follow, so I was interested to learn more.
+Do you work on an android app that&amp;#39;s split up into modules? If so, it would great if you could spend a few mins filling out this survey, gathering data on your approach - I&amp;#39;ll publish the results so everyone in Android community can benefit!</description>
+    </item>
+    
+  </channel>
+</rss>

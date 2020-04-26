@@ -12,14 +12,77 @@
     
     
     <item>
-      <title>Migrating away from Medium</title>
-      <link>https://emmaguy.github.io/posts/26-apr-2020/</link>
+      <title>Hello, Hugo</title>
+      <link>https://emmaguy.github.io/posts/2020-apr-26-hello-hugo/</link>
       <pubDate>Sun, 26 Apr 2020 11:02:28 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/posts/26-apr-2020/</guid>
+      <guid>https://emmaguy.github.io/posts/2020-apr-26-hello-hugo/</guid>
       <description>Medium has gone downhill sharply since I first published some blogs on their platform. It&amp;rsquo;s been irritating to me as a reader of other blogs to be pushed to login or subscribe or whatever, and I don&amp;rsquo;t want my content used like that.
 So, I&amp;rsquo;ve finally sorted out my own blog - using Hugo &amp;amp; GitHub Pages
 Farewell, Medium.</description>
+    </item>
+    
+    <item>
+      <title>Android Modularisation Survey 2019 - the results!</title>
+      <link>https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/</link>
+      <pubDate>Fri, 01 Mar 2019 13:09:22 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/</guid>
+      <description>A couple of weeks ago, I tweeted a survey to find out more about how Android developers were modularising their apps. It&amp;rsquo;s a broad and complicated topic, with no clear standard approach or conventions to follow, so I was interested to learn more.
+Do you work on an android app that&amp;#39;s split up into modules? If so, it would great if you could spend a few mins filling out this survey, gathering data on your approach - I&amp;#39;ll publish the results so everyone in Android community can benefit!</description>
+    </item>
+    
+    <item>
+      <title>Tracking Android app metrics</title>
+      <link>https://emmaguy.github.io/posts/2018-jul-7-tracking-android-app-metrics/</link>
+      <pubDate>Sat, 07 Jul 2018 13:09:07 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2018-jul-7-tracking-android-app-metrics/</guid>
+      <description>When I joined Monzo I was keen to keep a track of metrics that would help us keep a handle on the app&amp;rsquo;s size and method count. I set up a shell script on our CI to upload the numbers to StatHat each time we merged a change to our develop branch. This was great in theory, but not visible enough to be actually useful - in fact, one of the stats stopped uploading properly some months ago and we didn&amp;rsquo;t even notice.</description>
+    </item>
+    
+    <item>
+      <title>Mysterious Kotlin &#39;parameter non-null exception&#39;</title>
+      <link>https://emmaguy.github.io/posts/2017-dec-2-kotlin-non-null-exception/</link>
+      <pubDate>Sat, 02 Dec 2017 13:08:43 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2017-dec-2-kotlin-non-null-exception/</guid>
+      <description>This week I found myself confused by an exception when writing a simple extension method on Android&amp;rsquo;s TextView.
+Consider the following extension method:
+fun TextView.doSomething() { } This is about as simple as it could get - it has no parameters and returns nothing. However, when I tried to use it, I found myself with the following exception:
+ Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.checkParameterIsNotNull, parameter $receiver
+But that&amp;rsquo;s weird - it looks like there&amp;rsquo;s a parameter called $receiver which is null… Except, I don&amp;rsquo;t have a parameter at all!</description>
+    </item>
+    
+    <item>
+      <title>Creating a Custom Type Adapter for Moshi</title>
+      <link>https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/</link>
+      <pubDate>Fri, 22 Sep 2017 13:08:25 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/</guid>
+      <description>In building an app which guides a user through a process, stage by stage, we would probably use an enum to represent it.
+For example, consider a process which goes from NOT_STARTED, through IN_PROGRESS to one of either REJECTED or COMPLETED:
+ The logic for moving between these stages is transparent to the app, we show different screens based on which stage a user is in.
+But what if the mapping of stages isn&amp;rsquo;t 1:1 on the client and the server?</description>
+    </item>
+    
+    <item>
+      <title>Dynamically changing SVG colours on Android</title>
+      <link>https://emmaguy.github.io/posts/2015-nov-29-dynamic-svg-colours/</link>
+      <pubDate>Sun, 29 Nov 2015 13:08:07 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2015-nov-29-dynamic-svg-colours/</guid>
+      <description>Recently, I needed to change the colour of part of a drawable - and I wanted to do it better than manually swapping out the whole image, or swapping in and out the changing part and overlaying this on top of a base image.
+I knew I wanted the assets to be vector based if at all possible - SVG support was added in Lollipop with the VectorDrawable class and have been a great addition.</description>
+    </item>
+    
+    <item>
+      <title>Death to Ugly Android Screenshots</title>
+      <link>https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/</link>
+      <pubDate>Sun, 11 Oct 2015 13:07:00 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/</guid>
+      <description>Clean Status Bar is an app I created in September 2014 to try and make taking nice screenshots for the Google Play Store easy and fast. Ugly screenshots are a distraction from the app you&amp;rsquo;re trying to show off, and have become somewhat of a pet peeve of mine. When I&amp;rsquo;m looking at an app on the Play Store and wondering whether it&amp;rsquo;s worth downloading or not, the first thing I look at is the screenshots.</description>
     </item>
     
   </channel>

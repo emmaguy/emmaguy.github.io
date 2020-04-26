@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.69.2" />
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr/amzrk2/favicons/favicon.ico" />
+
+
+<title>Android Modularisation Survey 2019 - the results! - Emma&#39;s Blog</title>
+
+<meta name="author" content="" />
+<meta name="description" content="A couple of weeks ago, I tweeted a survey to find out more about how Android developers were modularising their apps. It&rsquo;s a broad and complicated topic, with no clear standard approach or conventions to follow, so I was interested to learn more.
+Do you work on an android app that&#39;s split up into modules? If so, it would great if you could spend a few mins filling out this survey, gathering data on your approach - I&#39;ll publish the results so everyone in Android community can benefit!" />
+
+<meta name="keywords" content="android, modularisation" />
+
+
+<meta property="og:title" content="Android Modularisation Survey 2019 - the results!" />
+<meta property="og:description" content="A couple of weeks ago, I tweeted a survey to find out more about how Android developers were modularising their apps. It&rsquo;s a broad and complicated topic, with no clear standard approach or conventions to follow, so I was interested to learn more.
+Do you work on an android app that&#39;s split up into modules? If so, it would great if you could spend a few mins filling out this survey, gathering data on your approach - I&#39;ll publish the results so everyone in Android community can benefit!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/" />
+<meta property="article:published_time" content="2019-03-01T13:09:22+01:00" />
+<meta property="article:modified_time" content="2019-03-01T13:09:22+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Android Modularisation Survey 2019 - the results!"/>
+<meta name="twitter:description" content="A couple of weeks ago, I tweeted a survey to find out more about how Android developers were modularising their apps. It&rsquo;s a broad and complicated topic, with no clear standard approach or conventions to follow, so I was interested to learn more.
+Do you work on an android app that&#39;s split up into modules? If so, it would great if you could spend a few mins filling out this survey, gathering data on your approach - I&#39;ll publish the results so everyone in Android community can benefit!"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://emmaguy.github.io/css/main.min.css" />
+
+
+
+
+<script src="https://emmaguy.github.io/js/jquery.min.js"></script>
+
+<script src="https://emmaguy.github.io/js/lazysizes.min.js"></script>
+
+<link rel="stylesheet" href="https://emmaguy.github.io/css/all.min.css" />
+
+
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    
+    <div class="container-lg clearfix">
+        <div class="col-12 p-3">
+            <a id="main-title" href="https://emmaguy.github.io/">Emma&#39;s Blog</a>
+            <span id="sub-title"></span>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    <h4 id="post-title">
+        <a href="https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/">Android Modularisation Survey 2019 - the results!</a>
+    </h4>
+    <div id="post-meta">
+        <span>
+    <time datetime="2019-03-01 13:09:22 &#43;0100 &#43;0100">2019-03-01</time> |
+</span>
+<span>
+    <span>1825 words</span> |
+</span>
+<span>
+    
+    
+    <a href="https://emmaguy.github.io//tags/android/">android</a>
+    
+    <a href="https://emmaguy.github.io//tags/modularisation/">modularisation</a>
+    
+    
+</span>
+    </div>
+    
+    <div class="markdown-body" id="post-content">
+        <figure>
+    <img src="/img/modularisation-banner.png"/> 
+</figure>
+
+<p>A couple of weeks ago, I tweeted a survey to find out more about how Android developers were modularising their apps. It&rsquo;s a broad and complicated topic, with no clear standard approach or conventions to follow, so I was interested to learn more.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Do you work on an android app that&#39;s split up into modules? If so, it would great if you could spend a few mins filling out this survey, gathering data on your approach - I&#39;ll publish the results so everyone in Android community can benefit! <a href="https://t.co/dKP6VAea9u">https://t.co/dKP6VAea9u</a> RT for reach!</p>&mdash; Emma Vanbrabant (@emmaguy) <a href="https://twitter.com/emmaguy/status/1093193141233090560?ref_src=twsrc%5Etfw">February 6, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>We had 123 responses - thank you so much to everyone who took the time to fill it out! It was a lot more than I had expected and made for some really interesting reading.</p>
+<p>We&rsquo;ll go over the results from the main questions asked in the survey:</p>
+<ul>
+<li>Number of modules</li>
+<li>Build system used</li>
+<li>How the app is modularised (e.g. by layer or product feature), what a module looks like internally, and any common modules</li>
+<li>How the app handles Navigation</li>
+<li>Any plans to change the modularisation setup in the future</li>
+</ul>
+<h2 id="results">Results</h2>
+<p>The range of the numbers of modules are was pretty broad - the highest number of modules was 800! However, this was an outlier - the majority of the rest were much lower in comparison:</p>
+<figure>
+    <img src="/img/modularisation-number-modules.png"/> <figcaption>
+            <h4>Distribution of number of modules, from survey responses</h4>
+        </figcaption>
+</figure>
+
+<p>As you can see, there were a few responses from developers with around the 100–150 module range, some between 60–100, but the majority of responders have less than 30 modules. There were 5 submissions about apps which have only 1 module.</p>
+<p>Almost every app is using Gradle as it&rsquo;s build system - except for two.</p>
+<figure>
+    <img src="/img/modularisation-build-system.png"/> 
+</figure>
+
+<p>The two apps with the highest number of modules (150 and 800) are the two using Buck.</p>
+<h2 id="module-configuration">Module configuration</h2>
+<p>How developers are splitting up modules, and what type of modules varied a lot - some had mostly Android libraries for everything, some had mostly pure Java/Kotlin modules and kept the Android specific code isolated, others had a fairly even mix of both of these. There were also people with modules for WearOS, the NDK, instant apps and using dynamic feature modules.</p>
+<p>There were a few themes with how developers approached modularising their apps - some opting to split by their product features, some by core components (e.g.persistence or networking), some by clean architecture. Others used a combination of these - splitting by feature and layer, e.g. <code>&lt;feature&gt;</code>, <code>&lt;feature&gt;-view</code> and <code>&lt;feature&gt;-data</code> alongside some core modules.</p>
+<p>A few people have been following how <a href="https://medium.com/androiddevelopers/a-patchwork-plaid-monolith-to-modularized-app-60235d9f212e" target="_blank">Plaid modularised</a> and said they are doing the same - each dynamic feature is an Activity and the app pulls together different Android library feature modules.</p>
+<h2 id="some-specific-examples">Some specific examples:</h2>
+<h3 id="an-app-with-120-modules-95-android-modules-5-pure-kotlin-11-developers">An app with 120 modules (95% Android modules, 5% pure Kotlin), 11 developers:</h3>
+<p><em>We have three types of module:</em></p>
+<ol>
+<li><em>&ldquo;data&rdquo; modules. These typically contain a repository for accessing data remotely or via disk. They&rsquo;re mostly android modules for now, as we depend on Realm and SharedPreference s quite a lot, but we&rsquo;re working towards converting all of them into pure kotlin modules.</em></li>
+<li>*&ldquo;feature&rdquo; modules. These contain the screens, view models, presenters, etc for a feature. As well as specific use cases. These are always Android modules. *</li>
+<li><em>&ldquo;horizontal&rdquo; modules. These are isolated pieces of functionality that feature modules or data modules can depend on, but not vice versa!</em></li>
+</ol>
+<p><em>Feature modules only contain the screens for that module, so they&rsquo;re not shared anywhere. For networking, or APIs that can be shared, they&rsquo;re kept in data modules (which are meant for re-use).</em></p>
+<p><em>We have one monster module called base which we created when we first started splitting stuff up. We&rsquo;re chipping away it constantly, but pulling stuff out of there is really time consuming because it&rsquo;s so entangled throughout the layers and other modules in the app.</em></p>
+<h3 id="an-app-with-60-modules-4-android-app-32-android-library-24-kotlinjava-modules-with-6-developers">An app with 60 modules (4 Android app, 32 Android library, 24 Kotlin/Java modules), with 6 developers:</h3>
+<p><em>A feature is sometimes composed of multiple modules. Firstly the core business rules of the feature are implemented as a Kotlin/Java library that declares interfaces (ports) that must be plugged-into. An Android view layer implementation for the feature plugs into the business rules. An adapter plugs into the business rules to provide an implementation of statistics/analytics gathering (and links it to an analytics client). An adapter plugs into the business rules to provide the integration against a back-end service client, and so on.</em></p>
+<p><em>We try to develop features as bounded contexts, such that they are not coupled by shared models and entities as much as possible. Data is shared by having an output interface on one feature and an input interface on another. These interfaces form a value boundary. An adapter that handles routing/navigation and understands the interfaces of both features translates between them. For example, selecting from a list on one page, might only cause an ID to be passed to a details page.</em></p>
+<p><em>This is currently leading to what we call &ldquo;module explosion&rdquo; but we predicted this and went into it consciously as we explore this approach and solidify the architectural boundaries that we believe are important. At some point we will probably consolidate a little.</em></p>
+<p><em>Common modules have been a hot topic of discussion and the ideal approach is currently not decided. We wish to have bounded contexts. We don&rsquo;t wish to become coupled by too much shared code. However, there are a number of concepts that we don&rsquo;t want to repeat over and over.</em></p>
+<p><em>We don&rsquo;t want a ball of mud &lsquo;utils&rsquo; module; we don&rsquo;t want lots of little single-class, single-function modules. Currently we have a number of small modules. We also consciously decided to have a UI component library with lots of common UI &ldquo;atoms&rdquo; and &ldquo;components&rdquo; that can be reused across multiple features.</em></p>
+<h3 id="an-app-with-40-modules-5050-android-to-jvm-modules-with-3-developers">An app with 40 modules (50:50 Android to JVM modules, with 3 developers:</h3>
+<p><em>We split our modules by feature and clean architecture layers which include data, business logic (sometimes entities), presentation, and feature (for entry points and DI wiring).</em></p>
+<p><em>A feature module typically maps to a full screen view along with any background workers for the data primarily involved by the screen.</em></p>
+<p><em>We have common modules for diagnostics (logging, error reports), Analytics, System (System info, clock, etc;).</em></p>
+<h3 id="an-app-with-23-modules-70-android-to-30-pure-kotlin-modules-with-3-developers">An app with 23 modules (70% Android to 30% pure Kotlin modules), with 3 developers:</h3>
+<p><em>We support multiple device types can be connected in multiple ways (usb, BT) - these device types have their own &lsquo;interface&rsquo; module, each connection lives as a separate implementation module. Then there&rsquo;s pure business logic, which lives in composeable feature modules.</em></p>
+<p><em>Finally there are composeable UI modules that provide different screens/flows for specific parts of the app, and an app module that ties everything together.</em></p>
+<p><em>Our business feature modules try to have as few dependencies as possible to focus on the pure business logic. The modules provide interfaces to be able to receive what they need, other modules (such as the app module) provide implementations of these interfaces, like an implementation that uses networking.</em></p>
+<p><em>Our common modules are a domain module that introduces cross-cutting data classes for the domain, and a utils module for &lsquo;dumb&rsquo; utility methods.</em></p>
+<h3 id="an-app-with-7-modules-5-android-libraries-1-pure-kotlin-1-android-application-5-developers">An app with 7 modules (5 Android libraries, 1 pure kotlin, 1 Android application), 5 developers:</h3>
+<p><em>Each module represents one UI feature. The main Android module is dependent on all of them. Back-end stuff is in the pure Kotlin module which everything knows about. We aren&rsquo;t complex enough yet to have much problem with this, when we&rsquo;ve hit circular dependencies we&rsquo;ve been able to move things to the correct module without needing a generic common or shared module. Although I expect we will need one soon.</em></p>
+<p><em>Our networking stuff lives in a pure Kotlin module that everything depends on, but each feature module has a repository that adapts from the API classes into the domain objects for that specific feature. We are using an MVVM architecture with Android architecture components, so each feature module has:</em></p>
+<ul>
+<li><em>repository (sometimes multiple)</em></li>
+<li><em>a ViewModel (with a factory)</em></li>
+<li><em>an activity</em></li>
+<li><em>a set of binding adapters, invoked from the XML.</em></li>
+</ul>
+<p><em>We have tried to avoid fragments and custom classes extending from View as much as possible, we think they add too much complexity. Right now we aren&rsquo;t complex enough to have much shared functionality between the modules. We do have a UserRepository which is used in its own login module and other modules, but that&rsquo;s all right now, so we just gave those other modules a dependency on login. I can see this becoming more problematic in future though.</em></p>
+<h2 id="navigation">Navigation</h2>
+<p>A big theme from all of the responses was that navigation is really hard! A lot of the given solutions were cited as areas that could be improved in the future.</p>
+<p>Some developers are using libraries, such as Conductor and Jetpack&rsquo;s Navigation library. Others are using reflection or deep links as alternative strategies.</p>
+<p>The majority have a custom solution - some using a single Navigator interface in their main app module and injecting it everywhere its needed. Others enforce that each feature module declares a routing interface which then are individually provided as needed. A few people detailed how they just broadcast what happened (e.g. this button was clicked) and let the top level module with access to everything decide how to proceed, another explained they&rsquo;re using the Coordinator pattern from the app module which connects all features together.</p>
+<p>One person wrote:</p>
+<blockquote>
+<p><em>Navigation is currently an area of pain. We are currently using a bespoke navigation component that is too coupled to the navigation UI. We have plans to rewrite navigation and routing.</em></p>
+</blockquote>
+<blockquote>
+<p><em>A module will declare a router interface that the factory assembling it must provide an implementation of. This implementation is then integrated against the global navigation component and raises a &ldquo;navigation event&rdquo; which is handled centrally, the navigation UI updated, then a &ldquo;screen factory&rdquo; causes the new screen to be displayed.</em></p>
+</blockquote>
+<h2 id="plans-for-thefuture">Plans for the future</h2>
+<p>There were a few themes here: some wanted to try out a build system other than Gradle to see if they could improve their build times. Lots wanted to improve their navigation or their dependency injection setup (most of these were around dagger-android and moving towards a separate component per module). Others said they wanted to leverage instant apps and dynamic features. Some were happy - they said their setup works well enough for now, and were instead focusing on building app features.</p>
+<h2 id="fin">Fin</h2>
+<p>That&rsquo;s it!</p>
+<p>The survey was fairly tricky to summarise, because of the huge variation in how everyone has chosen to go about modularising. I&rsquo;ve tried to highlight the trends from results where there have been some, but this is a very broad and complicated topic - tweet at me if you have anything to add!</p>
+<p>Thanks to <a href="https://twitter.com/keyboardsurfer" target="_blank">Ben Weiss</a> and <a href="https://twitter.com/jonfry22" target="_blank">Jon Fry</a> for reading drafts of this post.</p>
+<hr>
+<p>If you enjoyed reading this post, you can find me on twitter <a href="http://www.twitter.com/emmaguy" target="_blank">@emmaguy</a></p>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left" id="sidebar">
+                
+<div id="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#module-configuration">Module configuration</a></li>
+    <li><a href="#some-specific-examples">Some specific examples:</a>
+      <ul>
+        <li><a href="#an-app-with-120-modules-95-android-modules-5-pure-kotlin-11-developers">An app with 120 modules (95% Android modules, 5% pure Kotlin), 11 developers:</a></li>
+        <li><a href="#an-app-with-60-modules-4-android-app-32-android-library-24-kotlinjava-modules-with-6-developers">An app with 60 modules (4 Android app, 32 Android library, 24 Kotlin/Java modules), with 6 developers:</a></li>
+        <li><a href="#an-app-with-40-modules-5050-android-to-jvm-modules-with-3-developers">An app with 40 modules (50:50 Android to JVM modules, with 3 developers:</a></li>
+        <li><a href="#an-app-with-23-modules-70-android-to-30-pure-kotlin-modules-with-3-developers">An app with 23 modules (70% Android to 30% pure Kotlin modules), with 3 developers:</a></li>
+        <li><a href="#an-app-with-7-modules-5-android-libraries-1-pure-kotlin-1-android-application-5-developers">An app with 7 modules (5 Android libraries, 1 pure kotlin, 1 Android application), 5 developers:</a></li>
+      </ul>
+    </li>
+    <li><a href="#navigation">Navigation</a></li>
+    <li><a href="#plans-for-thefuture">Plans for the future</a></li>
+    <li><a href="#fin">Fin</a></li>
+  </ul>
+</nav>
+</div>
+
+<div id="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+    </ul>
+</div>
+<div id="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/android/">android</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/apk-size/">apk size</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/kotlin/">kotlin</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/meta/">meta</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/modularisation/">modularisation</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/moshi/">moshi</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/open-source/">open source</a>
+        </span>
+        
+    </div>
+</div>
+<div id="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+    </ul>
+</div>
+
+            </div>
+            
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="https://emmaguy.github.io/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+</footer>
+    
+
+
+
+
+<script>
+    $("#widget-toc a").click(function () {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        });
+        return false;
+    });
+</script>
+
+
+
+</body>
+
+</html>

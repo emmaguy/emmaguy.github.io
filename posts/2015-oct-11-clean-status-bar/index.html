@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.69.2" />
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr/amzrk2/favicons/favicon.ico" />
+
+
+<title>Death to Ugly Android Screenshots - Emma&#39;s Blog</title>
+
+<meta name="author" content="" />
+<meta name="description" content="Clean Status Bar is an app I created in September 2014 to try and make taking nice screenshots for the Google Play Store easy and fast. Ugly screenshots are a distraction from the app you&rsquo;re trying to show off, and have become somewhat of a pet peeve of mine. When I&rsquo;m looking at an app on the Play Store and wondering whether it&rsquo;s worth downloading or not, the first thing I look at is the screenshots." />
+
+<meta name="keywords" content="android, open source" />
+
+
+<meta property="og:title" content="Death to Ugly Android Screenshots" />
+<meta property="og:description" content="Clean Status Bar is an app I created in September 2014 to try and make taking nice screenshots for the Google Play Store easy and fast. Ugly screenshots are a distraction from the app you&rsquo;re trying to show off, and have become somewhat of a pet peeve of mine. When I&rsquo;m looking at an app on the Play Store and wondering whether it&rsquo;s worth downloading or not, the first thing I look at is the screenshots." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/" />
+<meta property="article:published_time" content="2015-10-11T13:07:00+01:00" />
+<meta property="article:modified_time" content="2015-10-11T13:07:00+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Death to Ugly Android Screenshots"/>
+<meta name="twitter:description" content="Clean Status Bar is an app I created in September 2014 to try and make taking nice screenshots for the Google Play Store easy and fast. Ugly screenshots are a distraction from the app you&rsquo;re trying to show off, and have become somewhat of a pet peeve of mine. When I&rsquo;m looking at an app on the Play Store and wondering whether it&rsquo;s worth downloading or not, the first thing I look at is the screenshots."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://emmaguy.github.io/css/main.min.css" />
+
+
+
+
+<script src="https://emmaguy.github.io/js/jquery.min.js"></script>
+
+<script src="https://emmaguy.github.io/js/lazysizes.min.js"></script>
+
+<link rel="stylesheet" href="https://emmaguy.github.io/css/all.min.css" />
+
+
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    
+    <div class="container-lg clearfix">
+        <div class="col-12 p-3">
+            <a id="main-title" href="https://emmaguy.github.io/">Emma&#39;s Blog</a>
+            <span id="sub-title"></span>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    <h4 id="post-title">
+        <a href="https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/">Death to Ugly Android Screenshots</a>
+    </h4>
+    <div id="post-meta">
+        <span>
+    <time datetime="2015-10-11 13:07:00 &#43;0100 BST">2015-10-11</time> |
+</span>
+<span>
+    <span>1327 words</span> |
+</span>
+<span>
+    
+    
+    <a href="https://emmaguy.github.io//tags/android/">android</a>
+    
+    <a href="https://emmaguy.github.io//tags/open-source/">open source</a>
+    
+    
+</span>
+    </div>
+    
+    <div class="markdown-body" id="post-content">
+        <p><img src="/img/clean-status-bar-banner.png" alt="Clean Status Bar banner"></p>
+<p><a href="https://github.com/emmaguy/clean-status-bar" target="_blank">Clean Status Bar</a> is an app I created in September 2014 to try and make taking nice screenshots for the Google Play Store easy and fast. Ugly screenshots are a distraction from the app you&rsquo;re trying to show off, and have become somewhat of a pet peeve of mine. When I&rsquo;m looking at an app on the Play Store and wondering whether it&rsquo;s worth downloading or not, the first thing I look at is the screenshots. Why wouldn&rsquo;t you show your app off at its best?</p>
+<p>The idea came about after I had to produce a large number of screenshots for a client project: 8 screenshots of the app, showing 3 different currencies (GBP, EUR and USD), timed by 3 different screen sizes (phone, 7&rdquo; and 10&rdquo; tablets). It took forever - I painstakingly photoshopped the status bar of each screenshot to be clean and without the distractions of low/charging battery, notifications or poor WiFi/data connection. There has to be a better way!</p>
+<h2 id="how-it-works-and-how-itgrew">How it works and how it grew</h2>
+<p>Hiding the real status bar is not possible, so the app just draws a black rectangle over it - the time and icons shown in the top, right corner can be configured by the user.</p>
+<figure>
+    <img src="/img/clean-status-bar.png" height="500"/> <figcaption>
+            <h4>The app as it is today</h4>
+        </figcaption>
+</figure>
+
+<p>Initially, the app just had a single button, letting the user toggle the black background with clock at 12:00 and battery 100% charged on and off - when pressed, the button started a <a href="http://developer.android.com/guide/components/services.html" target="_blank">Service</a> which created the fake status bar. Drawing over other apps is done with a permission called <a href="http://developer.android.com/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW" target="_blank">SYSTEM_ALERT_WINDOW</a>, which I first encountered using <a href="https://play.google.com/store/apps/details?id=com.linkbubble.playstore" target="_blank">Link Bubble</a>.</p>
+<p>To achieve an exact replica of what my actual status bar looked like, I opened <a href="https://source.android.com/" target="_blank">Android Open Source Project</a> (AOSP) and copied the <code>BatteryMeterView</code>, deleting anything that was not do with drawing the battery showing 100% charge. Similarly, I ensured the clock display matched AOSPs. Initially I was aiming to get the the status bar pixel perfect for my own phone (a Nexus 4 running KitKat). Generally I was aiming to support Google&rsquo;s Nexus devices - that&rsquo;s what I had and knew, and really that was all that was interesting for me. Other manufacturers mess around with the appearance of many things, the status bar being one of them, and trying to get all of those accurate was not a challenge I was interested in taking on.</p>
+<table>
+<thead>
+<tr>
+<th>v1 normal status bar</th>
+<th>v1 cleaned status bar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/clean-status-bar-v1-before.png" alt="Before"></td>
+<td><img src="/img/clean-status-bar-v1-after.png" alt="After"></td>
+</tr>
+</tbody>
+</table>
+<p>Incidentally, there don&rsquo;t seem to be any guidelines around what the time should be on Android screenshots, unlike on iOS where the convention is 9:41. Personally I still like 12:00, but for some brands/apps it can makes sense to be something else.</p>
+<p>Slowly, over time, other Android versions and capabilities were added - from full battery and 12:00 only came the ability to manually change the time and toggle different icons for the top right of the status bar - e.g. WiFi, network and GPS. Ensuring that the spacing, fonts, icons and assets had the correct colour and size for each platform took a fair amount of time to get right and test - Jelly Bean has blue icons, KitKat can have a coloured gradient background, Lollipop introduced new icons and the ability to have a solid coloured background and more recently, Marshmallow brought the light status bar.</p>
+<p>I had a number of feature requests to let people take screenshots with a transparent status bar, e.g. as you would see on the lock screen. Unfortunately because of how it works, by drawing over the existing status bar, transparency is not possible.</p>
+<h2 id="reception-feedback-and-the-google-playstore">Reception, feedback and the Google Play Store</h2>
+<p>I&rsquo;m very proud of the app - it was featured in Android Weekly twice and some of the 5 star reviews on the Play Store have been lovely (saving people&rsquo;s time is awesome!). It was also used in the demo videos in the 2014 Droidcon NYC keynote.</p>
+<p>However: the app continually receives 1 star reviews on the Play Store.</p>
+<p>These are not reviews by those actually using it as intended - the feedback I&rsquo;ve had from developers has been phenomenally good. But for some reason, the app gets downloaded by loads of non-developers, who seem to be generally very confused about what it is and does. Overwhelmingly, those reviews state that &ldquo;the time does not update&rdquo;.</p>
+<p>I have no idea why it&rsquo;s so well downloaded by non-developers - perhaps there is a real need for a customisable status bar? Perhaps I should have given it a different name, to focus less on the status bar but more on its usage for taking screenshots? I did try a number of things, but nothing seemed to make much difference.</p>
+<p>Putting it on the Play Store in the first place was probably a mistake - it could have remained solely an APK for download from GitHub. My curiosity of seeing how many downloads it would get is partially to blame (currently 70k), and I thought that the convenience of the store would help developers find it.</p>
+<p>Thinking about this more, a possible solution to this could be to have a new category of developer focused apps on the Play Store, which are only visible if you have &lsquo;Developer Tools&rsquo; enabled on your phone.</p>
+<h2 id="things-i-learnt-about-opensource">Things I learnt about open source</h2>
+<p>This was my first open source repository that has had much use by people other than me - and I learned a lot from it. It had a number of <a href="https://github.com/emmaguy/clean-status-bar/graphs/contributors" target="_blank">contributions</a>:</p>
+<ul>
+<li>Issues filed and fixed that I hadn&rsquo;t noticed</li>
+<li>Features suggestions with awesome ideas (such as using Intent to configure it, for use in a CI environment for automated testing or to add the APK to the &lsquo;releases&rsquo; part of the repo)</li>
+<li>Translations in to other languages - French, Italian, German, Slovak and US English</li>
+</ul>
+<p>I had a <a href="https://github.com/emmaguy/clean-status-bar/pull/12" target="_blank">hilarious contribution</a> from an American adding US localisation, who raised a pull request (PR) detailing the discovery of America and how the lack of the &ldquo;u&rdquo; character in the spelling of some words came to be - which still remains one of my favourite PRs of all time (also because the branch name was called &lsquo;USA_USA_USA&rsquo;).
+Someone else opened a PR renaming the project to &lsquo;Clean System Bars&rsquo; and including the navigation bar - I felt terrible declining something someone had clearly put some time into, but I wanted the app to remain focused on only the status bar.</p>
+<h2 id="feedback-fromusers">Feedback from users</h2>
+<p>One user was using it for a use case I&rsquo;d never have thought of - he wasn&rsquo;t allowed to use his work&rsquo;s WiFi, but he was doing it anyway and used the app to hide the fact he was connected to it.</p>
+<p>Another was a particularly nice email from a Russian speaker who had noticed all the 1 star reviews in Russian on the Play Store - they included a couple of Russian sentences which I could add to the description, to try and explain better the app&rsquo;s purpose to those who don&rsquo;t speak English.</p>
+<h2 id="whats-next">What&rsquo;s next</h2>
+<p>Slowly but surely, Clean Status Bar is becoming obsolete.</p>
+<p>There are two reasons for this: firstly, Android Marshmallow provides official support for what it does in the &lsquo;demo mode&rsquo; feature.
+Secondly, Marshmallow introduced a change in how the permission to draw over other apps works: you now have to explicitly allow the app to draw over other apps in Settings. Whilst this in itself isn&rsquo;t a huge problem for an app that targets developers, it&rsquo;s an extra hurdle - and coupled with the ability to use demo mode instead, I don&rsquo;t see a good reason to target SDK 23 or higher.</p>
+<p>I&rsquo;m not too sad about it though - it was a fun project but it&rsquo;s better that Android itself has added a way to keep those screenshots clean.</p>
+<hr>
+<p>Special thanks to <a href="https://github.com/emmaguy/clean-status-bar/graphs/contributors" target="_blank">everyone who&rsquo;s contributed</a> to the project, and to <a href="http://garbagecollected.org/" target="_blank">Robbie Vanbrabant</a> for reading a draft of this post.</p>
+<p>If you enjoyed reading this post, you can find me on twitter <a href="http://www.twitter.com/emmaguy" target="_blank">@emmaguy</a></p>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left" id="sidebar">
+                
+<div id="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-it-works-and-how-itgrew">How it works and how it grew</a></li>
+    <li><a href="#reception-feedback-and-the-google-playstore">Reception, feedback and the Google Play Store</a></li>
+    <li><a href="#things-i-learnt-about-opensource">Things I learnt about open source</a></li>
+    <li><a href="#feedback-fromusers">Feedback from users</a></li>
+    <li><a href="#whats-next">What&rsquo;s next</a></li>
+  </ul>
+</nav>
+</div>
+
+<div id="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+    </ul>
+</div>
+<div id="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/android/">android</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/apk-size/">apk size</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/kotlin/">kotlin</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/meta/">meta</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/modularisation/">modularisation</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/moshi/">moshi</a>
+        </span>
+        
+        <span>
+            <a href="https://emmaguy.github.io/tags/open-source/">open source</a>
+        </span>
+        
+    </div>
+</div>
+<div id="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+    </ul>
+</div>
+
+            </div>
+            
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="https://emmaguy.github.io/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+</footer>
+    
+
+
+
+
+<script>
+    $("#widget-toc a").click(function () {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        });
+        return false;
+    });
+</script>
+
+
+
+</body>
+
+</html>

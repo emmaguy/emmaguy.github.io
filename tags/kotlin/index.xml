@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kotlin on Emma&#39;s Blog</title>
+    <link>https://emmaguy.github.io/tags/kotlin/</link>
+    <description>Recent content in kotlin on Emma&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Dec 2017 13:08:43 +0100</lastBuildDate>
+    
+	<atom:link href="https://emmaguy.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mysterious Kotlin &#39;parameter non-null exception&#39;</title>
+      <link>https://emmaguy.github.io/posts/2017-dec-2-kotlin-non-null-exception/</link>
+      <pubDate>Sat, 02 Dec 2017 13:08:43 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2017-dec-2-kotlin-non-null-exception/</guid>
+      <description>This week I found myself confused by an exception when writing a simple extension method on Android&amp;rsquo;s TextView.
+Consider the following extension method:
+fun TextView.doSomething() { } This is about as simple as it could get - it has no parameters and returns nothing. However, when I tried to use it, I found myself with the following exception:
+ Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.checkParameterIsNotNull, parameter $receiver
+But that&amp;rsquo;s weird - it looks like there&amp;rsquo;s a parameter called $receiver which is null… Except, I don&amp;rsquo;t have a parameter at all!</description>
+    </item>
+    
+    <item>
+      <title>Creating a Custom Type Adapter for Moshi</title>
+      <link>https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/</link>
+      <pubDate>Fri, 22 Sep 2017 13:08:25 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/</guid>
+      <description>In building an app which guides a user through a process, stage by stage, we would probably use an enum to represent it.
+For example, consider a process which goes from NOT_STARTED, through IN_PROGRESS to one of either REJECTED or COMPLETED:
+ The logic for moving between these stages is transparent to the app, we show different screens based on which stage a user is in.
+But what if the mapping of stages isn&amp;rsquo;t 1:1 on the client and the server?</description>
+    </item>
+    
+  </channel>
+</rss>

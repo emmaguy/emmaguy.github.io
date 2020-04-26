@@ -8,7 +8,12 @@
   </url>
   
   <url>
-    <loc>https://emmaguy.github.io/posts/26-apr-2020/</loc>
+    <loc>https://emmaguy.github.io/posts/2020-apr-26-hello-hugo/</loc>
+    <lastmod>2020-04-26T11:02:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/tags/meta/</loc>
     <lastmod>2020-04-26T11:02:28+01:00</lastmod>
   </url>
   
@@ -18,11 +23,68 @@
   </url>
   
   <url>
-    <loc>https://emmaguy.github.io/categories/</loc>
+    <loc>https://emmaguy.github.io/tags/</loc>
+    <lastmod>2020-04-26T11:02:28+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://emmaguy.github.io/tags/</loc>
+    <loc>https://emmaguy.github.io/tags/android/</loc>
+    <lastmod>2019-03-01T13:09:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/posts/2019-mar-1-android-modularisation/</loc>
+    <lastmod>2019-03-01T13:09:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/tags/modularisation/</loc>
+    <lastmod>2019-03-01T13:09:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/tags/apk-size/</loc>
+    <lastmod>2018-07-07T13:09:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/posts/2018-jul-7-tracking-android-app-metrics/</loc>
+    <lastmod>2018-07-07T13:09:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/tags/kotlin/</loc>
+    <lastmod>2017-12-02T13:08:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/posts/2017-dec-2-kotlin-non-null-exception/</loc>
+    <lastmod>2017-12-02T13:08:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/</loc>
+    <lastmod>2017-09-22T13:08:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/tags/moshi/</loc>
+    <lastmod>2017-09-22T13:08:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/posts/2015-nov-29-dynamic-svg-colours/</loc>
+    <lastmod>2015-11-29T13:08:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/</loc>
+    <lastmod>2015-10-11T13:07:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emmaguy.github.io/tags/open-source/</loc>
+    <lastmod>2015-10-11T13:07:00+01:00</lastmod>
   </url>
   
 </urlset>
