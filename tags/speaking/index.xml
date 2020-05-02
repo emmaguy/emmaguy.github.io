@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>speaking on Emma&#39;s Blog</title>
+    <link>https://emmaguy.github.io/tags/speaking/</link>
+    <description>Recent content in speaking on Emma&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Apr 2020 11:02:28 +0100</lastBuildDate>
+    
+	<atom:link href="https://emmaguy.github.io/tags/speaking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Speaking</title>
+      <link>https://emmaguy.github.io/speaking/</link>
+      <pubDate>Sun, 26 Apr 2020 11:02:28 +0100</pubDate>
+      
+      <guid>https://emmaguy.github.io/speaking/</guid>
+      <description>[Upcoming] Beyond &amp;lsquo;Senior Engineer&amp;rsquo; Talk at Women of Silicon Roundabout on 7th December 2020
+Often, progression in an engineering role means moving into line managing people. However, this is not for everyone nor is it the only available option. In this talk we&amp;rsquo;ll look at several choices for progression, and explore what the day to day of each of those looks like.
+We&amp;rsquo;ll also discuss the hurdles and challenges that you may face in undertaking this personal growth, such as dealing with imposter syndrome or measuring your impact now that you&amp;rsquo;re not writing so much code.</description>
+    </item>
+    
+  </channel>
+</rss>
