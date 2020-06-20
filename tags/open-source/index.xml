@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>open source on Emma&#39;s Blog</title>
-    <link>https://emmaguy.github.io/tags/open-source/</link>
+    <link>https://www.emmav.me/tags/open-source/</link>
     <description>Recent content in open source on Emma&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Oct 2015 13:07:00 +0100</lastBuildDate>
     
-	<atom:link href="https://emmaguy.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.emmav.me/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Death to Ugly Android Screenshots</title>
-      <link>https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/</link>
+      <link>https://www.emmav.me/posts/2015-oct-11-clean-status-bar/</link>
       <pubDate>Sun, 11 Oct 2015 13:07:00 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/posts/2015-oct-11-clean-status-bar/</guid>
+      <guid>https://www.emmav.me/posts/2015-oct-11-clean-status-bar/</guid>
       <description>Clean Status Bar is an app I created in September 2014 to try and make taking nice screenshots for the Google Play Store easy and fast. Ugly screenshots are a distraction from the app you&amp;rsquo;re trying to show off, and have become somewhat of a pet peeve of mine. When I&amp;rsquo;m looking at an app on the Play Store and wondering whether it&amp;rsquo;s worth downloading or not, the first thing I look at is the screenshots.</description>
     </item>
     

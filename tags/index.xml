@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Emma&#39;s Blog</title>
-    <link>https://emmaguy.github.io/tags/</link>
+    <link>https://www.emmav.me/tags/</link>
     <description>Recent content in Tags on Emma&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Apr 2020 11:02:28 +0100</lastBuildDate>
     
-	<atom:link href="https://emmaguy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.emmav.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>meta</title>
-      <link>https://emmaguy.github.io/tags/meta/</link>
+      <link>https://www.emmav.me/tags/meta/</link>
       <pubDate>Sun, 26 Apr 2020 11:02:28 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/tags/meta/</guid>
+      <guid>https://www.emmav.me/tags/meta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>speaking</title>
-      <link>https://emmaguy.github.io/tags/speaking/</link>
+      <link>https://www.emmav.me/tags/speaking/</link>
       <pubDate>Sun, 26 Apr 2020 11:02:28 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/tags/speaking/</guid>
+      <guid>https://www.emmav.me/tags/speaking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>android</title>
-      <link>https://emmaguy.github.io/tags/android/</link>
+      <link>https://www.emmav.me/tags/android/</link>
       <pubDate>Fri, 01 Mar 2019 13:09:22 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/tags/android/</guid>
+      <guid>https://www.emmav.me/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>modularisation</title>
-      <link>https://emmaguy.github.io/tags/modularisation/</link>
+      <link>https://www.emmav.me/tags/modularisation/</link>
       <pubDate>Fri, 01 Mar 2019 13:09:22 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/tags/modularisation/</guid>
+      <guid>https://www.emmav.me/tags/modularisation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apk size</title>
-      <link>https://emmaguy.github.io/tags/apk-size/</link>
+      <link>https://www.emmav.me/tags/apk-size/</link>
       <pubDate>Sat, 07 Jul 2018 13:09:07 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/tags/apk-size/</guid>
+      <guid>https://www.emmav.me/tags/apk-size/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kotlin</title>
-      <link>https://emmaguy.github.io/tags/kotlin/</link>
+      <link>https://www.emmav.me/tags/kotlin/</link>
       <pubDate>Sat, 02 Dec 2017 13:08:43 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/tags/kotlin/</guid>
+      <guid>https://www.emmav.me/tags/kotlin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>moshi</title>
-      <link>https://emmaguy.github.io/tags/moshi/</link>
+      <link>https://www.emmav.me/tags/moshi/</link>
       <pubDate>Fri, 22 Sep 2017 13:08:25 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/tags/moshi/</guid>
+      <guid>https://www.emmav.me/tags/moshi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>open source</title>
-      <link>https://emmaguy.github.io/tags/open-source/</link>
+      <link>https://www.emmav.me/tags/open-source/</link>
       <pubDate>Sun, 11 Oct 2015 13:07:00 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/tags/open-source/</guid>
+      <guid>https://www.emmav.me/tags/open-source/</guid>
       <description></description>
     </item>
     

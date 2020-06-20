@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>meta on Emma&#39;s Blog</title>
-    <link>https://emmaguy.github.io/tags/meta/</link>
+    <link>https://www.emmav.me/tags/meta/</link>
     <description>Recent content in meta on Emma&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Apr 2020 11:02:28 +0100</lastBuildDate>
     
-	<atom:link href="https://emmaguy.github.io/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.emmav.me/tags/meta/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello, Hugo</title>
-      <link>https://emmaguy.github.io/posts/2020-apr-26-hello-hugo/</link>
+      <link>https://www.emmav.me/posts/2020-apr-26-hello-hugo/</link>
       <pubDate>Sun, 26 Apr 2020 11:02:28 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/posts/2020-apr-26-hello-hugo/</guid>
+      <guid>https://www.emmav.me/posts/2020-apr-26-hello-hugo/</guid>
       <description>Medium has gone downhill sharply since I first published some blogs on their platform 5 years ago. It&amp;rsquo;s been irritating to me as a reader of other blogs to be pushed to login or subscribe or whatever, and I don&amp;rsquo;t want my content used like that.
 So, I&amp;rsquo;ve finally sorted out my own blog - using Hugo &amp;amp; GitHub Pages.
 Farewell, Medium.</description>

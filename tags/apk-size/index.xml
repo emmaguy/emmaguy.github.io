@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>apk size on Emma&#39;s Blog</title>
-    <link>https://emmaguy.github.io/tags/apk-size/</link>
+    <link>https://www.emmav.me/tags/apk-size/</link>
     <description>Recent content in apk size on Emma&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jul 2018 13:09:07 +0100</lastBuildDate>
     
-	<atom:link href="https://emmaguy.github.io/tags/apk-size/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.emmav.me/tags/apk-size/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tracking Android app metrics</title>
-      <link>https://emmaguy.github.io/posts/2018-jul-7-tracking-android-app-metrics/</link>
+      <link>https://www.emmav.me/posts/2018-jul-7-tracking-android-app-metrics/</link>
       <pubDate>Sat, 07 Jul 2018 13:09:07 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/posts/2018-jul-7-tracking-android-app-metrics/</guid>
+      <guid>https://www.emmav.me/posts/2018-jul-7-tracking-android-app-metrics/</guid>
       <description>When I joined Monzo I was keen to keep a track of metrics that would help us keep a handle on the app&amp;rsquo;s size and method count. I set up a shell script on our CI to upload the numbers to StatHat each time we merged a change to our develop branch. This was great in theory, but not visible enough to be actually useful - in fact, one of the stats stopped uploading properly some months ago and we didn&amp;rsquo;t even notice.</description>
     </item>
     

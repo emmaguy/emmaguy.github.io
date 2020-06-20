@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>moshi on Emma&#39;s Blog</title>
-    <link>https://emmaguy.github.io/tags/moshi/</link>
+    <link>https://www.emmav.me/tags/moshi/</link>
     <description>Recent content in moshi on Emma&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Sep 2017 13:08:25 +0100</lastBuildDate>
     
-	<atom:link href="https://emmaguy.github.io/tags/moshi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.emmav.me/tags/moshi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating a Custom Type Adapter for Moshi</title>
-      <link>https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/</link>
+      <link>https://www.emmav.me/posts/2017-sept-22-moshi-custom-type-adapter/</link>
       <pubDate>Fri, 22 Sep 2017 13:08:25 +0100</pubDate>
       
-      <guid>https://emmaguy.github.io/posts/2017-sept-22-moshi-custom-type-adapter/</guid>
+      <guid>https://www.emmav.me/posts/2017-sept-22-moshi-custom-type-adapter/</guid>
       <description>In building an app which guides a user through a process, stage by stage, we would probably use an enum to represent it.
 For example, consider a process which goes from NOT_STARTED, through IN_PROGRESS to one of either REJECTED or COMPLETED:
  The logic for moving between these stages is transparent to the app, we show different screens based on which stage a user is in.
